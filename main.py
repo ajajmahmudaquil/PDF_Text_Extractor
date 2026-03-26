@@ -3,8 +3,9 @@ import base64
 from PyPDF2 import PdfReader
 
 svg = '''<svg width="140" height="180" viewBox="0 0 140 180" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="140" height="180" rx="6" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
-  <polygon points="96,0 140,44 96,44" fill="#f0f0f0" stroke="#e0e0e0" stroke-width="1"/>
+  <polygon points="0,0 96,0 140,44 140,180 0,180" fill="#fff" stroke="#e0e0e0" stroke-width="1" stroke-linejoin="round"/>
+  <polygon points="96,0 140,44 96,44" fill="#f0f0f0"/>
+  <line x1="96" y1="0" x2="140" y2="44" stroke="#e0e0e0" stroke-width="1"/>
   <rect x="16" y="60" width="108" height="8" rx="3" fill="#e8e8e8"/>
   <rect x="16" y="76" width="90" height="8" rx="3" fill="#e8e8e8"/>
   <rect x="16" y="92" width="100" height="8" rx="3" fill="#e8e8e8"/>
